@@ -14,16 +14,21 @@
 
 body {
     display: flex;
+    margin-left: 30%;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5% 4% 5% 8%;
-    margin: 0 5% 0 0;
+    justify-content: space-between; /* espaço entre os elementos filhos do nav */
+    padding: 5% 5% 5% 15%;
     background-color: var(--nav-back);
     box-shadow: 1px/*>*/ 0 /*^*/ 5px /*blur*/ 1px /*radius*/ rgba(0, 0, 0, 0.1);
+    position: fixed; /* posiçao fixa */
+    top: 0; /* fixa no topo */
+    left: 0;
+    height: 100vh; /* define altura como 100% da tela */
+    
 }
 
 nav a {
@@ -48,10 +53,24 @@ nav a:hover {
     transition: 0.3s;
 }
 
+#home {
+    margin-top: 30vh;
+}
+
 h2 {
-    margin-top: 5%;
+    margin-top: 5vh;
 }
 
 p {
     margin: 0 15% 3% 0;
 }
+
+/**
+tema pro port: maid dragon colors; rosa marrom amarelo laranja
+ghfgh
+*/
+
+/**
+ao escrollar pela home* ir marcando onde esta na nav
+e no final da nav recomendar o mneu bluesky
+*/
