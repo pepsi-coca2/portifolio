@@ -2,7 +2,6 @@
 
 * {
     scroll-behavior: smooth;
-    background-color: #F1EEDC;
     margin: 0;
     padding: 0;
 }
@@ -13,33 +12,27 @@
 }
 
 body {
-    display: flex;
-    margin-left: 30%;
+        background-color: #F1EEDC;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* espaço entre os elementos filhos do nav */
-    padding: 5% 5% 5% 15%;
+    justify-content: space-evenly; /* espaço entre os elementos filhos do nav */
+    padding: 0 5% 0 15%;
     background-color: var(--nav-back);
     box-shadow: 1px/*>*/ 0 /*^*/ 5px /*blur*/ 1px /*radius*/ rgba(0, 0, 0, 0.1);
     position: fixed; /* posiçao fixa */
-    top: 0; /* fixa no topo */
-    left: 0;
-    height: 100vh; /* define altura como 100% da tela */
-    
+    height: 100%; /* define altura como 100% da tela */
 }
 
 nav a {
     display: flex;
-    flex-direction: column;
     white-space: nowrap; /* nao quebrar o txt no meio */
     padding: 12px;
     text-decoration: none;
     background-color: var(--nav-back);
     color: var(--link-color);
-
 
     font-size: medium;
     font-family: "Lexend", sans-serif;
@@ -53,6 +46,12 @@ nav a:hover {
     transition: 0.3s;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 31%;
+}
+
 #home {
     margin-top: 30vh;
 }
@@ -64,11 +63,6 @@ h2 {
 p {
     margin: 0 15% 3% 0;
 }
-
-/**
-tema pro port: maid dragon colors; rosa marrom amarelo laranja
-ghfgh
-*/
 
 /**
 ao escrollar pela home* ir marcando onde esta na nav
