@@ -30,7 +30,7 @@ nav a {
     display: flex;
     white-space: nowrap; /* nao quebrar o txt no meio */
     padding: 12px;
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: var(--nav-back);
     color: var(--link-color);
 
@@ -52,16 +52,30 @@ main {
     margin-left: 31%;
 }
 
-#home {
-    margin-top: 30vh;
-}
-
 h2 {
-    margin-top: 5vh;
+    margin: 25% 0 20px 0;
+}
+/**
+h3 {
+    margin: 10px 30px;
+}
+.projects a {
+    margin: 0 5000px;
 }
 
 p {
     margin: 0 15% 3% 0;
+}
+*/
+
+a {
+    text-decoration: none;
+    color: #eb58029f;
+}
+a:hover {
+    transition: 1s;
+    color: #eb5802;
+    text-decoration: underline ;
 }
 
 /**
