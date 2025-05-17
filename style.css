@@ -44,7 +44,7 @@ nav a:hover {
     background-color: #A2B8C7;
     color: #F1EEDC;
     transition: 0.3s;
-}
+} /* adicionar aos links externos outro modo de cor */
 
 main {
     display: flex;
