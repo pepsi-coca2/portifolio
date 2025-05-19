@@ -3,7 +3,7 @@
 
 * {
     scroll-behavior: smooth;
-    scroll-margin-top: 40vh; /* o scroll dos nav vao ficar com 40% da altura da tela de margem */
+    scroll-margin-top: 35vh; /* o scroll dos nav vao ficar com 40% da altura da tela de margem */
     margin: 0;
     padding: 0;
 }
