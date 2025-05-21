@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); /*nav */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); /*main */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap'); /*frase */
+
 
 * {
     scroll-behavior: smooth;
@@ -13,8 +15,10 @@
     --link-color: #183B4E;
 }
 
-body {
-        background-color: #F1EEDC;
+body {background-color: #F1EEDC;}
+
+.content {
+    margin: 0 10% 0 31%;
 }
 
 nav {
@@ -26,6 +30,7 @@ nav {
     box-shadow: 1px/*>*/ 0 /*^*/ 5px /*blur*/ 1px /*radius*/ rgba(0, 0, 0, 0.1);
     position: fixed; /* posiçao fixa */
     height: 100%; /* define altura como 100% da tela */
+    grid-column: auto;
 }
 
 nav a {
@@ -47,7 +52,7 @@ nav a:hover {
     color: #F1EEDC;
 }
 
-.nav_www a:hover {
+.nav_web a:hover {
     color: #eb5802;
     transition: 0.3s;
 }
@@ -55,7 +60,6 @@ nav a:hover {
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 10% 0 31%;
     font-size: large;
     font-family:  "Roboto Mono", monospace;
     font-weight: 400;
@@ -67,6 +71,23 @@ h2 {
 
 h3 {
     margin: 20px 0 10px 20px;
+}
+
+.footer {
+    font-family: "Martian Mono", monospace;
+    text-align: center;
+}
+
+.footer.frase {
+    margin: 3% 10% 3% 10%;
+    font-size: small;
+    color: #00000065;
+}
+
+.footer.licenca {
+    margin: 3% 3% 1% 3%;
+    font-size: x-small;
+    color: #0000003d;
 }
 
 #projects_link {
@@ -95,7 +116,18 @@ h3 {
     text-decoration: underline ;
 }
 
+@media (max-width: 1300px) {
+    .content {margin: 0 10% 0 34%;}
+} 
+
+/* @media (max-width: 1000px) {
+    nav {
+
+    }
+}  */
+
 /**
-ao escrollar pela home* ir marcando onde esta na nav
-e no final da nav recomendar o mneu bluesky
+ao escrollar pela home* ir marcando onde esta na nav 
+
+remover barra de rolagem
 */
